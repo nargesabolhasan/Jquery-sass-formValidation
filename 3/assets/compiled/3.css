@@ -4,4 +4,14 @@
   background-color: #2aa590;
 }
 
+.wrapper2 {
+  width: 100%;
+  background-color: brown;
+  padding-top: 16%;
+}
+.wrapper2:before {
+  content: ":)";
+  background-color: #2aa590;
+}
+
 /*# sourceMappingURL=3.css.map */

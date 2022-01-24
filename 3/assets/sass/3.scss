@@ -18,3 +18,6 @@
 .wrapper {
     @include wrapper-bg(1,16);
   }
+.wrapper2 {
+    @include wrapper-bg(1,16,":)");
+  }
