@@ -1,0 +1,20 @@
+@mixin wrapper-bg($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) + '%' );
+    @if $pseudo {
+        width: 100%;
+        background-color: brown;
+        padding-top: $padding;
+        &:before {
+            content:$pseudo ;
+            background-color: rgb(42, 165, 144);
+        }
+    } @else {
+           width: 100%;
+           padding-top: $padding;
+           background-color: rgb(42, 165, 144);
+        }
+}
+
+.wrapper {
+    @include wrapper-bg(1,16);
+  }
