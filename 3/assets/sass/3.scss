@@ -2,6 +2,7 @@
     $padding: unquote( ( $y / $x ) + '%' );
     @if $pseudo {
         width: 100%;
+        font-size: 50px;
         background-color: brown;
         padding-top: $padding;
         &:before {
@@ -12,6 +13,7 @@
            width: 100%;
            padding-top: $padding;
            background-color: rgb(42, 165, 144);
+           font-size: 50px;
         }
 }
 
