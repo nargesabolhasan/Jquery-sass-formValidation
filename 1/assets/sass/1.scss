@@ -11,14 +11,19 @@
     @include par-style;
 }
 .input-style{
-    @include child-style(0px,100%);
+    @include child-style(5px 10px,100%,3px);
+    
 }
 
 .wraper{
-    background-color: $c-grey;
-    width: 60%;
-    padding: 20px;
+    @include child-style(20px 20px,60%,10px)
 }
+#submit{
+    @include child-style(8px 15px,auto,5px);
+    border: none;  
+    margin-left:10PX;  
+}
+
 
 
 

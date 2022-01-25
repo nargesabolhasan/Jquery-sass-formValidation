@@ -1,28 +1,42 @@
-$c-grey:rgb(189, 189, 189);
-$c-green:rgb(25, 172, 94);
+$colors:(
+   "l-grey":rgb(228, 228, 228),
+   "d-grey":rgb(211, 211, 211),
+   "green":rgb(3, 179, 126),
+   "light":rgb(255, 239, 239)
+);
 
-
-
-@mixin textstyle($size,$colorName:black) {
-    font-size:$size;
-    @if $colorName{
-         color: $colorName
-    };
-};
+@each $colorName , $code in $colors{
+    .bg-color-#{ $colorName }{
+        background-color: $code;
+    }
+    .txt-color-#{$colorName}{
+        color: $code;
+    }
+    .br-color-#{$colorName}{
+        border:1px solid $code;
+    }
+}
 
 @mixin par-style{
   display: flex;
   flex-direction: column;
   justify-content:space-around;
   align-items:flex-start;
-  margin-bottom: 5px;
 }
-@mixin child-style($padding:0px,$width:auto) {
-   text-align: center;
+@mixin child-style($padding:0px 0px,$width:auto,$border-r:0px,$height:auto) {
    @if $padding{
-   padding-top:$padding; 
+        padding:$padding ; 
    }
    @if $width{
-    width:$width; 
+        width:$width; 
     }
+   @if $height{
+       height:$height; 
+    }
+   @if $border-r{
+        border-radius:$border-r; 
+    }
+
 }
+
+
