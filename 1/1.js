@@ -12,7 +12,6 @@ function openModal(e) {
       values[inputs.name] = inputs.value
     }
   }
-
   let text
   const box = document.forms["myform"]["first"]
   const box2 = document.forms["myform"]["last"]
@@ -25,10 +24,9 @@ function openModal(e) {
     modal.style.display = "block";
     setTimeout(function () { location.reload(); }, 8000);
     text = ""
+    document.getElementById("demo2").innerHTML 
   }
   document.getElementById("demo").innerHTML = text;
-  document.getElementById("demo2").innerHTML = text;
-
 }
 
 
@@ -37,6 +35,7 @@ closeicone.addEventListener("click", () => {
   modal.style.display = "none";
 })
 
+// ها را برای یادگیری بهتر مطالب (صرفا جهت تمرین) اضافه کردم validation توابع
 
 function validation(e) {
   let string = document.getElementById("first").value.split("")
@@ -49,8 +48,9 @@ function validation(e) {
     e.target.classList.remove("br-color-danger")
   }
   document.getElementById("demo").innerHTML = text;
-
 }
+
+
 
 function validation2(e) {
   let string = document.getElementById("last").value.split("")
