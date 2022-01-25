@@ -1,13 +1,24 @@
 @import "-library";
 
-.text-style{
-    @include textstyle(500px);
+// .text-style{
+//     @include textstyle(500px);
+// }
+.par-style{
+   @include par-style;
 }
-.wraper{
-    display:flex;
-    flex-direction:column;
+.label-style{
+    @include child-style(10px,100%);
+    @include par-style;
+}
+.input-style{
+    @include child-style(0px,100%);
 }
 
+.wraper{
+    background-color: $c-grey;
+    width: 60%;
+    padding: 20px;
+}
 
 
 

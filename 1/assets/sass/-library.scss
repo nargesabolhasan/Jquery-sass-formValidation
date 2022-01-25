@@ -1,20 +1,28 @@
-$c-grey:rgb(88, 88, 88);
+$c-grey:rgb(189, 189, 189);
 $c-green:rgb(25, 172, 94);
 
 
 
 @mixin textstyle($size,$colorName:black) {
     font-size:$size;
-
     @if $colorName{
          color: $colorName
     };
 };
 
-@mixin style{
+@mixin par-style{
   display: flex;
   flex-direction: column;
   justify-content:space-around;
-  align-items: center;
-
+  align-items:flex-start;
+  margin-bottom: 5px;
+}
+@mixin child-style($padding:0px,$width:auto) {
+   text-align: center;
+   @if $padding{
+   padding-top:$padding; 
+   }
+   @if $width{
+    width:$width; 
+    }
 }
