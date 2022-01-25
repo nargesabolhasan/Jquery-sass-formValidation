@@ -24,9 +24,9 @@ function openModal(e) {
     modal.style.display = "block";
     setTimeout(function () { location.reload(); }, 8000);
     text = ""
-    document.getElementById("demo2").innerHTML 
   }
   document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo2").innerHTML= text;
 }
 
 

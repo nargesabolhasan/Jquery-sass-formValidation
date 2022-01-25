@@ -1,3 +1,7 @@
+.c-font{
+    font-family: 'Lato', sans-serif;
+}
+
 $colors:(
    "l-grey":rgb(228, 228, 228),
    "d-grey":rgb(211, 211, 211),
@@ -39,8 +43,12 @@ $colors:(
     }
 
 }
-.c-font{
-    font-family: 'Lato', sans-serif;
+
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
 }
+@mixin for-tablet-portrait-up {
+    @media (max-width: 900px) { @content; }
+  }
 
 

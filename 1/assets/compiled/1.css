@@ -1,3 +1,7 @@
+.c-font {
+  font-family: "Lato", sans-serif;
+}
+
 .bg-color-l-grey {
   background-color: #e4e4e4;
 }
@@ -55,18 +59,60 @@
 }
 
 .br-color-danger {
-  border: 2px solid #cf3434;
+  border: 1px solid #cf3434;
 }
 
-.c-font {
-  font-family: "Lato", sans-serif;
+*, *::before, *::after {
+  margin: 0%;
+  padding: 0%;
 }
 
-.par-style {
+.wraper {
+  padding: 20px 20px;
+  width: 40%;
+  height: 600px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+@media (max-width: 599px) {
+  .wraper {
+    padding: 10px 20px;
+    width: 80vw;
+    height: 85vh;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .wraper {
+    padding: 20px 20px;
+    width: 90vw;
+    height: 85vh;
+    border-radius: 10px;
+  }
+}
+
+.form-style {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+}
+@media (max-width: 599px) {
+  .form-style {
+    padding: 0px 0px;
+    width: auto;
+    height: 80vh;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 900px) {
+  .form-style {
+    padding: 0px 0px;
+    width: auto;
+    height: 80vh;
+    border-radius: 0px;
+  }
 }
 
 .label-style {
@@ -78,6 +124,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  margin-top: 15px;
+  position: relative;
 }
 
 .input-style {
@@ -85,15 +133,23 @@
   width: 95%;
   height: auto;
   border-radius: 3px;
+  margin-top: 10px;
 }
-
-.wraper {
-  padding: 20px 20px;
-  width: 60%;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-top: 30px;
+@media (max-width: 599px) {
+  .input-style {
+    padding: 5px 10px;
+    width: 80%;
+    height: auto;
+    border-radius: 3px;
+  }
+}
+@media (max-width: 900px) {
+  .input-style {
+    padding: 5px 10px;
+    width: 90%;
+    height: auto;
+    border-radius: 3px;
+  }
 }
 
 #submit {
@@ -138,6 +194,16 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#demo {
+  position: absolute;
+  top: 70px;
+}
+
+#demo2 {
+  position: absolute;
+  top: 70px;
 }
 
 /*# sourceMappingURL=1.css.map */

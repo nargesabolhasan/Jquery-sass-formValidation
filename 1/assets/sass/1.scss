@@ -1,29 +1,52 @@
 @import "-library";
+*,*::before,*::after{
+  margin: 0%;
+  padding: 0%;
+}
 
-// .text-style{
-//     @include textstyle(500px);
-// }
-.par-style{
+.wraper{
+  @include child-style(20px 20px,40%,10px,600px);
+  margin: 0 auto;
+  margin-top:30px;
+  @include for-phone-only{
+    @include child-style(10px 20px,80vw,10px,85vh);
+  }
+  @include for-tablet-portrait-up {
+    @include child-style(20px 20px,90vw,10px,85vh);
+  }  
+}
+
+.form-style{
    @include par-style;
+   @include for-phone-only{
+      @include child-style(0px 0px,auto,0px,80vh);
+   }
+   @include for-tablet-portrait-up {
+      @include child-style(0px 0px,auto,0px,80vh);
+   }  
 }
 .label-style{
     @include child-style(10px,100%);
     @include par-style;
-}
-.input-style{
-    @include child-style(5px 10px,95%,3px);
-    
+    margin-top: 15px;
+    position: relative;
 }
 
-.wraper{
-    @include child-style(20px 20px,60%,10px);
-    margin: 0 auto;
-    margin-top:30px;
+.input-style{
+    @include child-style(5px 10px,95%,3px);
+    margin-top: 10px;
+    @include for-phone-only{
+      @include child-style(5px 10px,80%,3px);
+    }
+    @include for-tablet-portrait-up {
+      @include child-style(5px 10px,90%,3px);
+    }  
+    
 }
 #submit{
-    @include child-style(8px 15px,auto,5px);
-    border: none;  
-    margin-left:10px;  
+  @include child-style(8px 15px,auto,5px);
+  border: none;  
+  margin-left:10px;  
 }
 
 .modal {
@@ -61,7 +84,16 @@
     font-weight: bold;
   }
 
+#demo{
+  position: absolute;
+  top:70px;
 
+}
+#demo2{
+  position: absolute;
+  top:70px;
+
+}
   
 
 

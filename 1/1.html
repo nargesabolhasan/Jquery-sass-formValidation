@@ -8,56 +8,60 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@400;500;600;700&family=Fuzzy+Bubbles:wght@400;700&family=Lato&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Rubik+Beastly&family=Vujahday+Script&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@400;500;600;700&family=Fuzzy+Bubbles:wght@400;700&family=Lato&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Rubik+Beastly&family=Vujahday+Script&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/compiled/1.css">
   <title>Document</title>
 </head>
 
 <body>
-<!-------******Modal******----------------------------------------------------------------------------------------------------->
+  <!-------******Modal******----------------------------------------------------------------------------------------------------->
   <div id="myModal" class="modal">
     <!------ Modal content---------------------- -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class="c-font txt-color-green" style="font-size: 20px;">Your information was successfully registered !</p>
-      </div>
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="c-font txt-color-green " style="font-size: 20px;">Your information was successfully registered !</p>
     </div>
-<!---------******form*******----------------------------------------------------------------------------------------------------->
+  </div>
+  <!---------******form*******----------------------------------------------------------------------------------------------------->
   <div class="wraper bg-color-l-grey">
-    <form name="myform" class="par-style" onsubmit="openModal(event)">
+    <form name="myform" class="form-style" onsubmit="openModal(event)">
       <!--------f name------------------------------->
-      <label  for="first" class="label-style c-font">
+      <label for="first" class="label-style c-font">
         First Name
-        <input name="first"  id="first" type="text" placeholder="Your name.." class="input-style br-color-d-grey c-font " onfocusout="validation(event)">
+        <input name="first" id="first" type="text" placeholder="Your name.." class="input-style br-color-d-grey c-font "
+          onfocusout="validation(event)">
         <p id="demo" class="txt-color-danger"></p>
       </label>
       <!--------l name----------------------------->
-      <label for="last" class="label-style c-font">
+      <label for="last" class="label-style c-font" >
         Last Name
-        <input name="last"  id="last" type="text" placeholder="Your last name.." class="input-style br-color-d-grey c-font " onfocusout="validation2(event)">
+        <input name="last" id="last" type="text" placeholder="Your last name.."
+          class="input-style br-color-d-grey c-font " onfocusout="validation2(event)" >
         <p id="demo2" class="txt-color-danger"></p>
       </label>
       <!--------Country----------------------------->
       <label class="label-style c-font">
         Country
-        <select name="Country" class="input-style br-color-d-grey ">
+        <select name="Country" class="input-style br-color-d-grey">
           <option selected class="c-font">Australia</option>
           <option class="c-font">India</option>
-          <option class="c-font" >Iran</option>
-          <option class="c-font" >Iraq</option>
+          <option class="c-font">Iran</option>
+          <option class="c-font">Iraq</option>
         </select>
       </label>
       <!--------Subject---------------------------->
       <label for="subject" class="label-style c-font">
         Subject
-        <textarea name="Subject" id="subject" rows="8" cols="50" placeholder="write something.. "
+        <textarea name="Subject" id="subject"  rows="8" cols="50" placeholder="write something.. "
           class="input-style br-color-d-grey c-font"></textarea>
       </label>
       <!------submit----------------------------->
-      <input  id="submit" type="submit" class="bg-color-green txt-color-light c-font" >
+      <input id="submit" type="submit" class="bg-color-green txt-color-light c-font">
     </form>
   </div>
-<script src="1.js"></script>
+  <script src="1.js"></script>
 </body>
 
 </html>
