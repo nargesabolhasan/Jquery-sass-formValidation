@@ -1,0 +1,20 @@
+$c-grey:rgb(88, 88, 88);
+$c-green:rgb(25, 172, 94);
+
+
+
+@mixin textstyle($size,$colorName:black) {
+    font-size:$size;
+
+    @if $colorName{
+         color: $colorName
+    };
+};
+
+@mixin style{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+
+}

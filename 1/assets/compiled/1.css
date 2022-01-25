@@ -1,0 +1,11 @@
+.text-style {
+  font-size: 500px;
+  color: black;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=1.css.map */

@@ -1,0 +1,15 @@
+@import "-library";
+
+.text-style{
+    @include textstyle(500px);
+}
+.wraper{
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+
+
+
