@@ -24,23 +24,23 @@
     </div>
 <!---------******form*******----------------------------------------------------------------------------------------------------->
   <div class="wraper bg-color-l-grey">
-    <form class="par-style">
+    <form name="myform" class="par-style" onsubmit="openModal(event)">
       <!--------f name------------------------------->
       <label  for="first" class="label-style c-font">
         First Name
-        <input  id="first" type="text" placeholder="Your name.." class="input-style br-color-d-grey c-font " onfocusout="validation(event)">
+        <input name="first"  id="first" type="text" placeholder="Your name.." class="input-style br-color-d-grey c-font " onfocusout="validation(event)">
         <p id="demo" class="txt-color-danger"></p>
       </label>
       <!--------l name----------------------------->
       <label for="last" class="label-style c-font">
         Last Name
-        <input  id="last" type="text" placeholder="Your last name.." class="input-style br-color-d-grey c-font " onfocusout="validation2(event)">
+        <input name="last"  id="last" type="text" placeholder="Your last name.." class="input-style br-color-d-grey c-font " onfocusout="validation2(event)">
         <p id="demo2" class="txt-color-danger"></p>
       </label>
       <!--------Country----------------------------->
       <label class="label-style c-font">
         Country
-        <select class="input-style br-color-d-grey ">
+        <select name="Country" class="input-style br-color-d-grey ">
           <option selected class="c-font">Australia</option>
           <option class="c-font">India</option>
           <option class="c-font" >Iran</option>
@@ -50,11 +50,11 @@
       <!--------Subject---------------------------->
       <label for="subject" class="label-style c-font">
         Subject
-        <textarea id="subject" rows="8" cols="50" placeholder="write something.. "
+        <textarea name="Subject" id="subject" rows="8" cols="50" placeholder="write something.. "
           class="input-style br-color-d-grey c-font"></textarea>
       </label>
       <!------submit----------------------------->
-      <input id="submit" type="submit" class="bg-color-green txt-color-light c-font" onclick="openModal(event)">
+      <input  id="submit" type="submit" class="bg-color-green txt-color-light c-font" >
     </form>
   </div>
 <script src="1.js"></script>

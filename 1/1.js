@@ -4,16 +4,34 @@ const closeicone = document.getElementsByClassName("close")[0];
 
 
 function openModal(e) {
-  const unvalid1 = document.getElementById("demo2").innerHTML
-  const unvalid2 = document.getElementById("demo").innerHTML
-  if (unvalid1 === "Input not valid!" || unvalid2 === "Input not valid!") {
-    e.preventDefault()
+  e.preventDefault()
+  const formElement = e.target
+  const values = {}
+  for (inputs of formElement) {
+    if (inputs.name) {
+      values[inputs.name] = inputs.value
+    }
+  }
+
+  let text
+  const box = document.forms["myform"]["first"]
+  const box2 = document.forms["myform"]["last"]
+  if (box.value === ""||box2.value === "") {
+    text = "Input not valid!"
+    box.classList.add("br-color-danger")
+    box2.classList.add("br-color-danger")
+
   } else {
-    e.preventDefault()
     modal.style.display = "block";
     setTimeout(function () { location.reload(); }, 8000);
+    text = ""
   }
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo2").innerHTML = text;
+
 }
+
+
 
 closeicone.addEventListener("click", () => {
   modal.style.display = "none";
@@ -45,5 +63,5 @@ function validation2(e) {
     e.target.classList.remove("br-color-danger")
   }
   document.getElementById("demo2").innerHTML = text;
-
 }
+
