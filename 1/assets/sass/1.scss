@@ -11,20 +11,28 @@
     @include par-style;
 }
 .input-style{
-    @include child-style(5px 10px,100%,3px);
+    @include child-style(5px 10px,95%,3px);
     
 }
 
 .wraper{
-    @include child-style(20px 20px,60%,10px)
+    @include child-style(20px 20px,60%,10px);
+    margin: 0 auto;
+    margin-top:30px;
 }
 #submit{
     @include child-style(8px 15px,auto,5px);
     border: none;  
-    margin-left:10PX;  
+    margin-left:10px;  
 }
 
-
+.mymodal{
+    position: fixed;
+    z-index:1;
+    background-color: rgba(128, 128, 128, 0.329);
+    @include child-style(0px 0px,100%,0px,100%);
+    
+}
 
 
 

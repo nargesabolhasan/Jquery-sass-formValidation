@@ -46,6 +46,10 @@
   border: 1px solid #ffefef;
 }
 
+.c-font {
+  font-family: "Lato", sans-serif;
+}
+
 .par-style {
   display: flex;
   flex-direction: column;
@@ -66,7 +70,7 @@
 
 .input-style {
   padding: 5px 10px;
-  width: 100%;
+  width: 95%;
   height: auto;
   border-radius: 3px;
 }
@@ -76,6 +80,8 @@
   width: 60%;
   height: auto;
   border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 #submit {
@@ -84,7 +90,17 @@
   height: auto;
   border-radius: 5px;
   border: none;
-  margin-left: 10PX;
+  margin-left: 10px;
+}
+
+.mymodal {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(128, 128, 128, 0.329);
+  padding: 0px 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
 }
 
 /*# sourceMappingURL=1.css.map */
