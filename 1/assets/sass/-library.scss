@@ -2,7 +2,8 @@ $colors:(
    "l-grey":rgb(228, 228, 228),
    "d-grey":rgb(211, 211, 211),
    "green":rgb(3, 179, 126),
-   "light":rgb(255, 239, 239)
+   "light":rgb(255, 239, 239),
+   "danger":rgb(207, 52, 52)
 );
 
 @each $colorName , $code in $colors{

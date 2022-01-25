@@ -46,6 +46,18 @@
   border: 1px solid #ffefef;
 }
 
+.bg-color-danger {
+  background-color: #cf3434;
+}
+
+.txt-color-danger {
+  color: #cf3434;
+}
+
+.br-color-danger {
+  border: 1px solid #cf3434;
+}
+
 .c-font {
   font-family: "Lato", sans-serif;
 }

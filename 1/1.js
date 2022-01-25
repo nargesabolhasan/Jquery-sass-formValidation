@@ -15,11 +15,11 @@ closeicone.addEventListener("click",()=>{
 
 
 function validation(e){
-console.log(e.target)
 let string = document.getElementById("first").value.split("")
  let text;
    if(string.length<=3){
-      text = "Input not valid";
+      text = "Input not valid!";
+      e.target.classList.add("br-color-danger")
    }else {
        text = "Input OK";
        }
@@ -27,3 +27,17 @@ let string = document.getElementById("first").value.split("")
 document.getElementById("demo").innerHTML = text;
 
 }
+
+function validation2(e){
+  let string = document.getElementById("last").value.split("")
+   let text;
+     if(string.length<=3){
+        text = "Input not valid!";
+        e.target.classList.add("br-color-danger")
+     }else {
+         text = "Input OK";
+         }
+  
+  document.getElementById("demo2").innerHTML = text;
+  
+  }
