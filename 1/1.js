@@ -15,7 +15,9 @@ function openModal(e) {
   let text
   const box = document.forms["myform"]["first"]
   const box2 = document.forms["myform"]["last"]
-  if (box.value === ""||box2.value === "") {
+  const letters =box.value.split("")
+  const letters2 =box2.value.split("")
+  if (letters.length<3 ||letters2.length<3 ) {
     text = "Input not valid!"
     box.classList.add("br-color-danger")
     box2.classList.add("br-color-danger")
@@ -40,7 +42,7 @@ closeicone.addEventListener("click", () => {
 function validation(e) {
   let string = document.getElementById("first").value.split("")
   let text;
-  if (string.length <= 3) {
+  if (string.length <3) {
     text = "Input not valid!";
     e.target.classList.add("br-color-danger")
   } else {
@@ -55,7 +57,7 @@ function validation(e) {
 function validation2(e) {
   let string = document.getElementById("last").value.split("")
   let text;
-  if (string.length <= 3) {
+  if (string.length < 3) {
     text = "Input not valid!";
     e.target.classList.add("br-color-danger")
   } else {
