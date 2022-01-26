@@ -6,7 +6,7 @@ $colors:(
    "l-grey":rgb(228, 228, 228),
    "d-grey":rgb(211, 211, 211),
    "green":rgb(3, 179, 126),
-   "light":rgb(255, 239, 239),
+   "light":rgb(243, 243, 243),
    "danger":rgb(207, 52, 52)
 );
 
@@ -22,13 +22,13 @@ $colors:(
     }
 }
 
-@mixin par-style{
+@mixin display-flex{
   display: flex;
   flex-direction: column;
   justify-content:space-around;
   align-items:flex-start;
 }
-@mixin child-style($padding:0px 0px,$width:auto,$border-r:0px,$height:auto) {
+@mixin layout-design($padding:0px 0px,$width:auto,$border-r:0px,$height:auto) {
    @if $padding{
         padding:$padding ; 
    }
@@ -51,4 +51,8 @@ $colors:(
     @media (max-width: 900px) { @content; }
   }
 
+@mixin demos ($top){
+    position: absolute;
+    top:$top;
+}
 
